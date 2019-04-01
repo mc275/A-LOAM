@@ -1,4 +1,16 @@
 # A-LOAM
+
+> Modification:
+>1. 增加LOAM scanRegistration.cpp 代码注释
+>2. 增加doxygen注释内容
+
+>Todo:
+>1. 增加LOAM laserOdometry.cpp 代码注释
+>2. 增加LOAM laserMapping.cpp 代码注释
+>3. 增加LOAM论文中提出的特征筛选功能
+
+****
+
 ## Advanced implementation of LOAM
 
 A-LOAM is an Advanced implementation of LOAM (J. Zhang and S. Singh. LOAM: Lidar Odometry and Mapping in Real-time), which uses Eigen and Ceres Solver to simplify code structure. This code is modified from LOAM and [LOAM_NOTED](https://github.com/cuitaixiang/LOAM_NOTED). This code is clean and simple without complicated mathematical derivation and redundant operations. It is a good learning material for SLAM beginners.
@@ -61,4 +73,3 @@ The build process may take a while depends on your machine. After that, run `./r
 
 ## 6.Acknowledgements
 Thanks for LOAM(J. Zhang and S. Singh. LOAM: Lidar Odometry and Mapping in Real-time) and [LOAM_NOTED](https://github.com/cuitaixiang/LOAM_NOTED).
-
