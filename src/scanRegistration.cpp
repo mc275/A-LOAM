@@ -453,7 +453,7 @@ void laserCloudHandler(const sensor_msgs::PointCloud2ConstPtr &laserCloudMsg)
                 }
             }
 
-            // 筛选小曲率点云作为边点特征候选
+            // 筛选小曲率点云作为面点特征候选
             int smallestPickedNum = 0;
             for (int k = sp; k <= ep; k++)
             {
@@ -614,7 +614,7 @@ int main(int argc, char **argv)
 
     /**STEP2 初始化Subscriber和Publisher*************/
     /** Step2.1 定义Subscriber，订阅话题名称为/velodyne_points，消息类型为sensor_msgs::PointCloud2
-    * 缓存buffer大小100， 订阅节点回调函数 laserCloudHandler */
+    * 缓存buffer大小100， 订阅节点，处理回调函数 laserCloudHandler */
     ros::Subscriber subLaserCloud = nh.subscribe<sensor_msgs::PointCloud2>("/velodyne_points", 100, laserCloudHandler);
 
     /**Step2.2 定义Publisher*/
