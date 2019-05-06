@@ -408,6 +408,7 @@ int main(int argc, char **argv)
 
                     // ceres求解器
                     ceres::Problem problem(problem_options);
+
                     // 添加优化状态，四元数和平移向量(上一帧到当前帧的点坐标变换)
                     problem.AddParameterBlock(para_q, 4, q_parameterization);
                     problem.AddParameterBlock(para_t, 3);
@@ -701,7 +702,7 @@ int main(int argc, char **argv)
             laserPath.header.frame_id = "/camera_init";
             pubLaserPath.publish(laserPath);
 
-            /** Step3.4 次特征点畸变矫正，为什么没做**/
+            /** Step3.4 特征点畸变矫正，为什么没做**/
             // transform corner features and plane features to the scan end point
             if (DISTORTION)
             {
