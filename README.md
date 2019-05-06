@@ -4,11 +4,11 @@
 >1. 增加LOAM scanRegistration.cpp 代码注释
 >2. 增加doxygen注释内容
 >3. 增加LOAM laserOdometry.cpp 代码注释
+>4. 增加LOAM laserMapping.cpp 代码注释
 
 >Todo:
->1. 增加LOAM laserMapping.cpp 代码注释
->2. 增加LOAM论文中提出的特征筛选功能
->3. 增加LeGO对LOAM的改进
+>1. 增加LOAM论文中提出的特征筛选功能
+>2. 增加LeGO对LOAM的改进
 
 ****
 
